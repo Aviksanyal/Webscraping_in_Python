@@ -13,15 +13,17 @@ if __name__ == '__main__':
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
 print("Hello")
 
+from bs4 import BeautifulSoup
+from selenium import webdriver
+
 import string
 import parent_import
 import path_parent
 import stringparser
 import requests
 import re
-from bs4 import BeautifulSoup
-from selenium import webdriver
 
+#testing on sample html document
 with open("sample1.html", "r") as fd:
     doc = BeautifulSoup(fd, "html.parser")
 
